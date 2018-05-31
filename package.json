@@ -1,14 +1,14 @@
 {
-  "name": "quokka-plugin-scratch-imports",
+  "name": "quokka-plugin-subdir",
   "version": "0.1.0",
   "description": "Quokka plugin to resolve imports from subdirectories modules, while in scratch mode.",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nodman/quokka-plugin-scratch-imports.git"
+    "url": "git+https://github.com/Nodman/quokka-plugin-subdir.git"
   },
   "keywords": [
     "quokka",
@@ -22,9 +22,9 @@
   "author": "Dmitriy Burmistrov <nodman@icloud.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Nodman/quokka-plugin-scratch-imports/issues"
+    "url": "https://github.com/Nodman/quokka-plugin-subdir/issues"
   },
-  "homepage": "https://github.com/Nodman/quokka-plugin-scratch-imports#readme",
+  "homepage": "https://github.com/Nodman/quokka-plugin-subdir#readme",
   "devDependencies": {
     "eslint": "^4.19.1"
   }
