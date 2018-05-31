@@ -1,4 +1,4 @@
-# quokka-plugin-scratch-imports
+# quokka-plugin-subdir
 
 
 Small [quokka](https://quokkajs.com/) plugin for resolving node_module imports from subdirectories
@@ -16,23 +16,23 @@ Add plugin to [quokka config](https://quokkajs.com/docs/configuration.html):
 
 ```json
 {
-  "plugins": ["quokka-plugin-scratch-imports"],
+  "plugins": ["quokka-plugin-subdir"],
 }
 ```
 
-Plugin can be used in two ways, let's say you have monorepo with 2 project:
+can be used in two ways, let's say you have monorepo with 2 projects in it:
 ```
 my-monorepo-project
 ├── client
 ├── server
 ```
 
-First way is to adding "subdir" into config:
+First way is adding "subdir" into config:
 
 ```json
 {
   "quokka": {
-    "plugins": ["quokka-plugin-scratch-imports"],
+    "plugins": ["quokka-plugin-subdir"],
     "subdir": "client"
   }
 }
@@ -53,7 +53,7 @@ is equal to:
 const _ = require('./my-monorepo-project/client/node_modules/lodash')
 ```
 
-Second way is to add tilda symbol before import:
+Second way is adding tilda symbol before import:
 
 ```js
 const koa = require('~server/koa')
@@ -73,9 +73,9 @@ You can install it as dev dependency for your package:
 
 ### Yarn
 
-    yarn add --save --dev quokka-plugin-scratch-imports
+    yarn add --save --dev quokka-plugin-subdir
 
 
 ### NPM
 
-    npm install --save-dev quokka-plugin-scratch-imports
+    npm install --save-dev quokka-plugin-subdir
